@@ -61,12 +61,14 @@ model.compile(
     metrics=['accuracy']
 )
 
+
 model.fit(
     train_dataset,
     validation_data=val_dataset,
     epochs=3
 )
 
+model.summary()
 
-
+model.save('Saved_Model/medical_mnist')
 
